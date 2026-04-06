@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 35px 12%;
+    background: hsl(79 0.9% 37%);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: grabbing;
+
+}
+
+.logo:hover {
+    color: hsl(177 100% 37%);
+    text-shadow: 1px 1px 25px hsl(177 100% 37%),
+                 1px 1px 50px hsl(177 100% 37%);
+    transform: scale(1.1);
+}
+
+.navbar a {
+    font-size: 18px;
+    color: black;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease; 
+    cursor: grabbing;
+}
+
+.navbar a:hover, .navbar a.active{
+    color: hsl(177 100% 37%);
+    border-bottom: 2px solid hsl(177 100% 37%);
+}
+
+.contact {
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: grabbing;
+    transition: 0.3s ease;
+
+}
+
+.contact:hover {
+    background-color: hsl(177 100% 37%);
+    box-shadow: 0 0 25px hsl(177 100% 37%);
+    color: white;
+}
+
+.span h1{
+    background-color: black;
+    color: hsl(177 100% 37%);
+}
+.home {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+
+}
+
+.home-content {
+    max-width: 800px;
+}
+.home-content h3 {
+    font-size: 42px;
+    color: black;
+    text-shadow: 2px 2px 4px hsl(79 0.9% 37%), 0 0 25px hsl(177 100% 37%), 0 0 5px hsl(177 100% 37%);
+}
+
+.home-content h1 {
+    font-size: 62px;
+    line-height: 1.2;
+    color: black;
+    text-shadow: 2px 2px 4px hsl(79 0.9% 37%), 0 0 25px hsl(177 100% 37%), 0 0 5px hsl(177 100% 37%);
+}
+
+.home-content p {
+    font-size: 18px;
+    margin: 25px 0 30px;
+
+}
+
+
+
+.img-box {
+    border-radius: 50%;
+}
+
+.img-box img{
+    border-radius: 50%;
+    width: 430px;
+    position: relative;
+    top: 3rem;
+    box-shadow: 0 0 25px hsl(79 0.9% 37%), 0 0 50px hsl(79 0.9% 37%), 0 0 100px hsl(79 0.9% 37%);
+    transition: 0.3s ease-in-out;
+    cursor: grabbing;
+
+}
+
+.img-box img:hover {
+    transform: scale(1.2);
+    transition: 2s;
+}
+
+.heading {
+    color: hsl(187 100% 52.4%);
+    font-size: 8rem;
+    text-align: center;
+    margin: 5rem 0;
+    transition: 0.3s ease;
+    cursor: grabbing;
+    
+}
+.heading:hover {
+    color: hsl(177 100% 37%);
+    text-shadow: 1px 1px 25px hsl(177 100% 37%),
+                 1px 1px 50px hsl(177 100% 37%);
+    transform: scale(1.1);
+
+}
+.education {
+    padding: 100px 5px;
+    background: hsl(177 100% 37%);
+}
+
+.education h2{
+    text-align: center;
+    font-size: 60px;
+
+}
+.timeline-date {
+    font-size: 20px;
+    font-weight: 800;
+    color: white;
+    margin: 6px 0 15px;
+
+}
+
+.timeline-content {
+    width: 70%;
+    max-width: 800px;
+    background-color: hsl(177 100% 37%);
+    padding: 20px;
+    margin-left: 300px;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px black,
+                0 0 5px black;
+    cursor: grabbing;
+    transition: 0.3s ease-in-out;
+
+}
+
+.timeline-content:hover {
+    background-color: hsl(177 100% 37%);
+    color: black;
+    transform: scale(1.1);
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px
+}
+
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: hsl(187 100% 52.4%);
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+    width: 50px;
+}
+
+.experience {
+    background: hsl(187 100% 52.4%);
+    color: black;
+}
+
+.experience h2{
+    margin: 5rem;
+    color: white;
+}
+
+.experience-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2em;
+}
+
+.experience-box {
+    width: 150%;
+    max-width: 800px;
+    background-color: hsl(187 100% 52.4%);
+    margin-left: 300px;
+    margin-bottom: 80px;
+    border-radius: 50px;
+    border: 5px solid transparent;
+    text-align: center;
+    cursor: grabbing;
+    box-shadow: 0 0 10px black,
+                0 0 5px black;
+}
